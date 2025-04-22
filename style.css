@@ -33,3 +33,18 @@ button {
   width: 120px;
   padding: 5px;
 }
+
+#routing {
+  margin-top: 10px;
+}
+
+#destination {
+  width: 180px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+#routeInfo {
+  margin-top: 10px;
+  font-size: 14px;
+}
