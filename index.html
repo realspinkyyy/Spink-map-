@@ -10,12 +10,25 @@
 <body>
   <h1>UK Waze-Style Map</h1>
   <div id="map"></div>
+
   <div id="controls">
     <button onclick="reportIssue('Traffic')">Report Traffic</button>
     <button onclick="reportIssue('Accident')">Report Accident</button>
     <button onclick="reportIssue('Hazard')">Report Hazard</button>
+    
+    <div id="routing">
+      <input type="text" id="destination" placeholder="Enter destination (e.g., London)">
+      <select id="travelMode">
+        <option value="driving-car">Car</option>
+        <option value="cycling-regular">Bike</option>
+        <option value="foot-walking">Walk</option>
+      </select>
+      <button onclick="routeTo()">Navigate</button>
+    </div>
+    <div id="routeInfo"></div>
   </div>
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script src="main.js"></script>
+
+  <!-- Firebase -->
+  <script type="module" src="main.js"></script>
 </body>
 </html>
